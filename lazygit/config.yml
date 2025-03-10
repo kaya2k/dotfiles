@@ -1,0 +1,8 @@
+gui:
+  mouseEvents: false
+  showBottomLine: false
+  showCommandLog: false
+  nerdFontsVersion: "3"
+  border: "single"
+quitOnTopLevelReturn: true
+
