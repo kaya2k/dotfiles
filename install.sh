@@ -1,5 +1,7 @@
 #!/bin/sh
 
+touch ~/.hushlogin
+
 # remove existing dotfiles
 rm ~/.gitconfig
 rm -r ~/.config/kitty
