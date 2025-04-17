@@ -9,12 +9,17 @@ plugins=(
 )
 source $ZSH/oh-my-zsh.sh
 
+# z settings
+ZSHZ_UNCOMMON=1
+
 # nvim
 alias vim="nvim"
 
 # change config directory for lazygit
 export XDG_CONFIG_HOME="$HOME/.config"
 
-#opam
-[[ ! -r '/Users/seungholee/.opam/opam-init/init.zsh' ]] || source '/Users/seungholee/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
+# opam
+[[ ! -r '/Users/kaya/.opam/opam-init/init.zsh' ]] || source '/Users/kaya/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
 
+# conda
+alias activate-conda="source ~/.miniconda3/bin/activate"
