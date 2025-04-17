@@ -11,11 +11,23 @@ vim.opt.fillchars = {
   }
 
 -- indent
-vim.opt.shiftwidth = 4
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
+local indent_size = 4
+vim.opt.shiftwidth = indent_size
+vim.opt.tabstop = indent_size
+vim.opt.softtabstop = indent_size
 vim.opt.expandtab = true
 vim.opt.smartindent = true
+
+-- indent for ocaml
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "ocaml",
+    callback = function()
+        indent_size = 2
+        vim.opt.shiftwidth = indent_size
+        vim.opt.tabstop = indent_size
+        vim.opt.softtabstop = indent_size
+    end,
+})
 
 -- searching
 vim.opt.hlsearch = true
