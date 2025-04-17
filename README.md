@@ -1,4 +1,3 @@
-# mac-dotfiles
-
-dotfiles for my mac
-
+```
+dotfiles for mac    ./install.sh
+```
