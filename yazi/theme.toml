@@ -1,0 +1,7 @@
+[mgr]
+cwd = { fg = "green", bold = true }
+border_symbol = " "
+
+[indicator]
+preview = { reversed = true }
+padding = { open = "█", close = "█" }

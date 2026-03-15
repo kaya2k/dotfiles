@@ -1,0 +1,7 @@
+gui:
+    mouseEvents: false
+    showCommandLog: false
+    nerdFontsVersion: "3"
+    showListFooter: false
+    showBottomLine: false
+    commitHashLength: 0
