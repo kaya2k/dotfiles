@@ -4,6 +4,7 @@ abbr g "lazygit"
 abbr y "yazi"
 abbr t "tmux new-session -A -s home"
 abbr vim "nvim"
+abbr uvim "uv run nvim"
 abbr prun "processing-java --sketch=(pwd) --run"
 
 # Eza
