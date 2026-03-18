@@ -6,7 +6,7 @@ abbr t "tmux new-session -A -s home"
 abbr vim "nvim"
 abbr prun "processing-java --sketch=(pwd) --run"
 
-## Aliases
+# Aliases
 alias ls "eza --long --no-permissions --no-time --octal-permissions --group --sort=type"
 
 # Appearance
