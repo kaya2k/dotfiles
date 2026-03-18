@@ -1,0 +1,29 @@
+size:
+  major: {foreground: DarkGray, is_bold: false}
+  minor: {foreground: DarkGray}
+  number_byte: {foreground: DarkGray, is_bold: false}
+  number_kilo: {foreground: DarkGray, is_bold: false}
+  number_mega: {foreground: DarkGray, is_bold: false}
+  number_giga: {foreground: DarkGray, is_bold: false}
+  number_huge: {foreground: DarkGray, is_bold: false}
+  unit_byte: {foreground: DarkGray}
+  unit_kilo: {foreground: DarkGray}
+  unit_mega: {foreground: DarkGray}
+  unit_giga: {foreground: DarkGray}
+  unit_huge: {foreground: DarkGray}
+
+users:
+  user_you: {foreground: DarkGray, is_bold: false}
+  user_root: {foreground: DarkGray}
+  user_other: {foreground: DarkGray}
+  group_yours: {foreground: DarkGray, is_bold: false}
+  group_other: {foreground: DarkGray}
+  group_root: {foreground: DarkGray}
+
+file_type:
+  build: {foreground: Yellow, is_bold: true, is_underline: false}
+
+punctuation: {foreground: DarkGray, is_bold: true}
+date: {foreground: DarkGray}
+octal: {foreground: DarkGray}
+flags: {foreground: DarkGray}

@@ -20,3 +20,4 @@ setup "lazygit" ~/.config/lazygit                          lazygit
 setup "nvim"    ~/.config/nvim                             nvim
 setup "tmux"    ~/.config/tmux/tmux.conf                   tmux/tmux.conf
 setup "yazi"    ~/.config/yazi                             yazi
+setup "eza"     ~/.config/eza                              eza
