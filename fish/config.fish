@@ -1,32 +1,20 @@
-# Aliases
-alias ls="ls -lh"
-alias vim="nvim"
-alias g="lazygit"
-alias o="open ."
-
-# Yazi
-function y
-	set tmp (mktemp -t "yazi-cwd.XXXXXX")
-	command yazi $argv --cwd-file="$tmp"
-	if read -z cwd < "$tmp"; and [ "$cwd" != "$PWD" ]; and test -d "$cwd"
-		builtin cd -- "$cwd"
-	end
-	rm -f -- "$tmp"
-end
-
-# Processing
-function prun
-    processing-java --sketch=(pwd) --run
-end
-
+# Abbrs
+abbr r "source ~/.config/fish/config.fish"
+abbr c "cd"
+abbr g "lazygit"
+abbr y "yazi"
+abbr vim "nvim"
+abbr prun "processing-java --sketch=(pwd) --run"
+alias ls "eza --long --no-permissions --octal-permissions --group --no-time --sort=type"
 
 # Appearance
 set -g fish_color_command --bold
 
 # Environment Variables
-set -gx XDG_CONFIG_HOME "$HOME/.config"
-set -gx PATH "$HOME/.local/bin" $PATH
 set -gx EDITOR nvim
+set -gx PATH "$HOME/.local/bin" $PATH
+set -gx XDG_CONFIG_HOME "$HOME/.config"
+set -gx EZA_CONFIG_DIR "$HOME/.config/eza"
 
 # Zoxide(z) Setup
 zoxide init fish | source
