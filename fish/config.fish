@@ -6,8 +6,10 @@ abbr t "tmux new-session -A -s home"
 abbr vim "nvim"
 abbr prun "processing-java --sketch=(pwd) --run"
 
-# Aliases
+# Eza
 alias ls "eza --long --no-permissions --no-time --octal-permissions --group --sort=type"
+abbr lsa "ls --all"
+abbr lst "ls --tree --git-ignore"
 
 # Appearance
 set -g fish_color_command --bold
