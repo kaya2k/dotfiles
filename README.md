@@ -1,7 +1,5 @@
 # dotfiles
 
-A collection of personal config files.
-
 ```bash
 #!/bin/sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
