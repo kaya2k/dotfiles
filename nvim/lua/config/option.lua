@@ -15,11 +15,16 @@ vim.opt.termguicolors = true
 
 -- Indent
 local indent_size = 4
-vim.opt.shiftwidth = indent_size
-vim.opt.tabstop = indent_size
-vim.opt.softtabstop = indent_size
 vim.opt.expandtab = true
 vim.opt.smartindent = true
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "*",
+    callback = function()
+        vim.opt_local.shiftwidth = indent_size
+        vim.opt_local.tabstop = indent_size
+        vim.opt_local.softtabstop = indent_size
+    end,
+})
 
 -- Search
 vim.opt.hlsearch = true
