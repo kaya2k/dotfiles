@@ -1,9 +1,11 @@
 # Abbrs
-abbr r "source ~/.config/fish/config.fish"
+abbr c "clear"
 abbr g "lazygit"
+abbr r "source ~/.config/fish/config.fish"
+abbr t "tmux new-session -A -s"
+abbr tl "fish_greeting"
+abbr v "uv run nvim"
 abbr y "yazi"
-abbr t "tmux new-session -A -s home"
-abbr vim "uv run nvim"
 abbr prun "processing-java --sketch=(pwd) --run"
 
 # Eza
